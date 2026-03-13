@@ -1,8 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
 /* import ViewExemplo01 from './view_examples/ViewExemplo01';*/
-import ViewExemplo2 from './view_examples/ViewExemplo02.js';
-import ExercicioView01 from './view_exercicios/ViewExercicio01.js';
+/* import ViewExemplo2 from './view_examples/ViewExemplo02.js'; */
+/* import ExercicioView01 from './view_exercicios/ViewExercicio01.js'; */
+import ViewExercicio1 from './view_exercicios/ViewExercicio01.js';
 /* import { EstruturaJSX } from './jsx_examples/01_estrutura_jsx'; */
 /* import { ExpressoesJSX } from './jsx_examples/02_expressoes_jsx'; */
 /* import Exemplo03 from './jsx_examples/03_condicionais_jsx'; */
@@ -18,7 +19,7 @@ import ExercicioView01 from './view_exercicios/ViewExercicio01.js';
 export default function App() {
   return (
     <View style={styles.container}>
-      <ExercicioView01/>
+      <ViewExercicio1/>
       <StatusBar style="auto" />
     </View>
   );
