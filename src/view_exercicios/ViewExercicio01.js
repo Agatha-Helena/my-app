@@ -1,83 +1,20 @@
-/* import { View, Text, StyleSheet } from "react-native";
-
-export default function ViewExercicio1() {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.titulo}>View e Flexbox</Text>
-      <View style={styles.exemplo}>
-        <View style={{flexDirection: "row", gap: 8}}>
-          <View style={styles.box}></View>
-          <View style={styles.box}></View>
-          <View style={styles.box}></View>
-        </View>
-      </View>
-      <View style={styles.exemplo}>
-        <View style={{flexDirection: "column", gap: 8, height: 350, width: 350, justifyContent: "center", alignItems: "center"}}>
-          <View style={styles.box}></View>
-          <View style={styles.box}></View>
-          <View style={styles.box}></View>
-        </View>
-      </View>
-    </View>
-  );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    alignItems: "center",
-    justifyContent: "center",
-    flex: 1,
-    gap: 18,
-  },
-  textStyle: {
-    color: "white",
-    fontWeight: "bold",
-  },
-  redBox: {
-    height: 80,
-    width: 80,
-
-    backgroundColor: "red",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  greenBox: {
-    height: 80,
-    width: 80,
-    backgroundColor: "green",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  blueBox: {
-    height: 80,
-    width: 80,
-    backgroundColor: "blue",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-}); */
-
 import { View, Text, StyleSheet } from "react-native";
 
-export default function ViewExercicio1() {
+export default function ViewExercicio01() {
   return (
     <View style={styles.container}>
-      <Text style={styles.titulo}>View e Flexbox</Text>
-      <View style={styles.exemplo}>
-        <View style={{flexDirection: "row", gap: 8}}>
-          <View style={styles.box}></View>
-          <View style={styles.box}></View>
-          <View style={styles.box}></View>
-        </View>
-      </View>
-      <View style={styles.exemplo}>
         <View style={{flexDirection: "column", gap: 8, height: 350, width: 350, justifyContent: "center", alignItems: "center"}}>
-          <View style={styles.box}></View>
-          <View style={styles.box}></View>
-          <View style={styles.box}></View>
+          <View style={styles.box1}>
+            <Text style={styles.textBox}>Vermelho</Text>
+          </View>
+          <View style={styles.box2}>
+            <Text style={styles.textBox}>Azul</Text>
+          </View>
+          <View style={styles.box3}>
+            <Text style={styles.textBox}>Verde</Text>
+          </View>
         </View>
       </View>
-    </View>
   );
 }
 
@@ -86,7 +23,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#f5f5f5",
+    backgroundColor: "#ffffff",
   },
   titulo: {
     fontSize: 20,
@@ -99,23 +36,29 @@ const styles = StyleSheet.create({
     color: "#4285f4",
     marginBottom: 8,
   },
-  exemplo: {
-    width: "80%",
-    padding: 16,
-    marginBottom: 16,
-    backgroundColor: "#fff",
-    borderRadius: 8,
+  box1: {
+    width: 80,
+    height: 80,
+    backgroundColor: "#ff0000",
+    justifyContent: "center",
+    alignItems: "center",
   },
-  box: {
-    width: 50,
-    height: 50,
-    backgroundColor: "#4285f4",
-    borderRadius: 4,
+  box2: {
+    width: 80,
+    height: 80,
+    backgroundColor: "#0000ff",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  box3: {
+    width: 80,
+    height: 80,
+    backgroundColor: "#1b9f00",
     justifyContent: "center",
     alignItems: "center",
   },
   textBox: {
-    color: "#fff",
+    color: "#ffffff",
     fontSize: 12,
     fontWeight: "bold",
   },

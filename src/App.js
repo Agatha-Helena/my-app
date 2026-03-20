@@ -1,9 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
+import ViewExercicio09 from './view_exercicios/ViewExercicio09';
+/* import ViewExercicio08 from './view_exercicios/ViewExercicio08'; */
+/* import ViewExercicio07 from './view_exercicios/ViewExercicio07'; */
+/* import ViewExercicio06 from './view_exercicios/ViewExercicio06'; */
+/* import ViewExercicio05 from './view_exercicios/ViewExercicio05'; */
+/* import ViewExercicio04 from './view_exercicios/ViewExercicio04'; */
+/* import ViewExercicio03 from './view_exercicios/ViewExercicio03'; */
+/* import ViewExercicio02 from './view_exercicios/ViewExercicio02'; */
 /* import ViewExemplo01 from './view_examples/ViewExemplo01';*/
 /* import ViewExemplo2 from './view_examples/ViewExemplo02.js'; */
 /* import ExercicioView01 from './view_exercicios/ViewExercicio01.js'; */
-import ViewExercicio1 from './view_exercicios/ViewExercicio01.js';
+/* import ViewExercicio01 from './view_exercicios/ViewExercicio01.js'; */
 /* import { EstruturaJSX } from './jsx_examples/01_estrutura_jsx'; */
 /* import { ExpressoesJSX } from './jsx_examples/02_expressoes_jsx'; */
 /* import Exemplo03 from './jsx_examples/03_condicionais_jsx'; */
@@ -19,7 +27,7 @@ import ViewExercicio1 from './view_exercicios/ViewExercicio01.js';
 export default function App() {
   return (
     <View style={styles.container}>
-      <ViewExercicio1/>
+      <ViewExercicio09/>
       <StatusBar style="auto" />
     </View>
   );
@@ -28,9 +36,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#c5c5c5',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#ffffff',
+
   },
   textStyle: {
     fontSize: 50,
