@@ -1,6 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
-import ViewExercicio09 from './view_exercicios/ViewExercicio09';
+/* import CardProduto from './props_exercises/produto_props'; */
+/* import Saudacao from './props_exercises/repetir_props'; */
+import PerfilAluno from './props_exercises/botao_props';
+/* import CartaoUsuario from './props_exercises/cartao_user'; */
+/* import ViewExercicio09 from './view_exercicios/ViewExercicio09';*/
 /* import ViewExercicio08 from './view_exercicios/ViewExercicio08'; */
 /* import ViewExercicio07 from './view_exercicios/ViewExercicio07'; */
 /* import ViewExercicio06 from './view_exercicios/ViewExercicio06'; */
@@ -21,14 +25,18 @@ import ViewExercicio09 from './view_exercicios/ViewExercicio09';
 /* import Lista01 from './jsx_examples/exercicios/lista_01_jsx'; */ /* funcionou tudo */
 /* import Lista02 from './jsx_examples/exercicios/lista_02_jsx'; */ /* funcionou tudo */
 /* import Lista03 from './jsx_examples/exercicios/lista_03_jsx'; */ /* funcionou tudo */
+/* import Exercicio20 from './prova/Exercicio20'; */
+/* import Exercicio21 from './prova/Exercicio21'; */
+/* import CartaoPerfil from './props_examples/cartao_perfil'; */
 
 
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <ViewExercicio09/>
-      <StatusBar style="auto" />
+      <PerfilAluno titulo="Entrar"/>
+      <PerfilAluno titulo="Sair"/>
+      <PerfilAluno titulo="Cadastrar"/>
     </View>
   );
 }
@@ -36,11 +44,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#ffffff',
-
-  },
-  textStyle: {
-    fontSize: 50,
-    color: "white"
+    justifyContent: "center",
+    alignItems: 'center'
   }
-});
+})
